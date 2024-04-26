@@ -12,7 +12,7 @@ class ListVC: UIViewController {
     private let completion: (_ name: String?,_ dict: [String:Any]?) -> Void
     var count = 1
     private var selectedUser: User?
-    
+    private var selectedInex = -1
     init(completion: @escaping (_ name: String?,_ dict: [String:Any]?) -> Void) {
         self.completion = completion
         let bundle = Bundle.module // Access bundle for the class
@@ -81,7 +81,7 @@ extension ListVC: UITableViewDataSource, UITableViewDelegate{
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as! UserCell
         print("Dequeued cell type: \(type(of: cell))")
         cell.selectionStyle = .none
-        cell.configure(data: data)
+        cell.configure(data: data, selectedIndex: self.selectedInex, currentIndex: indexPath.row)
         return cell
     }
     

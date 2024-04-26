@@ -52,7 +52,15 @@ class UserCell: UITableViewCell {
   }
 
   // MARK: - Configure Cell
-  func configure(data: User) {
-    lblUserNames.text = "\(data.firstName ?? "") \(data.lastName ?? "")"
+    func configure(data: User, selectedIndex: Int, currentIndex: Int) {
+        lblUserNames.text = "\(data.firstName ?? "") \(data.lastName ?? "")"
+        if selectedIndex == currentIndex{
+            self.viewUserCard.backgroundColor = .blue.withAlphaComponent(0.1)
+            self.lblUserNames.textColor = .white
+        }
+        else{
+            self.self.viewUserCard.backgroundColor = .white
+            self.lblUserNames.textColor = .black
+        }
   }
 }
