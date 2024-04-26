@@ -81,12 +81,12 @@ extension ListVC: UITableViewDataSource, UITableViewDelegate{
         cell.selectionStyle = .none
         cell.lblUserName.text = "\(data.firstName ?? "") \(data.lastName ?? "")"
         if data.id == self.selectedUser?.id{
-            cell.cardView.backgroundColor = .blue.withAlphaComponent(0.1)
+            cell.viewUserCard.backgroundColor = .blue.withAlphaComponent(0.1)
             cell.lblUserName.textColor = .white
         }
         else
         {
-            cell.cardView.backgroundColor = .white
+            cell.viewUserCard.backgroundColor = .white
             cell.lblUserName.textColor = .black
         }
         return cell
