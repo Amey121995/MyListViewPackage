@@ -79,6 +79,7 @@ extension ListVC: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let data = self.data[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as! UserCell
+        print("Dequeued cell type: \(type(of: cell))")
         cell.selectionStyle = .none
         cell.lblUserNames.text = "\(data.firstName ?? "") \(data.lastName ?? "")"
         if data.id == self.selectedUser?.id{
