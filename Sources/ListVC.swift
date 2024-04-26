@@ -15,7 +15,7 @@ class ListVC: UIViewController {
     
     init(completion: @escaping (_ name: String?,_ dict: [String:Any]?) -> Void) {
         self.completion = completion
-        super.init(nibName: "ListVC", bundle: Bundle.module)
+        super.init(nibName: "ListVC", bundle: .main)
     }
 
     
