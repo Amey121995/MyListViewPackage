@@ -7,14 +7,13 @@
 
 import UIKit
 class UserCell: UITableViewCell {
-  private let viewUserCard: UIView = {
+  private var viewUserCard: UIView = {
     let view = UIView()
-    view.backgroundColor = .white
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
   }()
 
-  private let lblUserNames: UILabel = {
+  private var lblUserNames: UILabel = {
     let label = UILabel()
     label.font = UIFont.systemFont(ofSize: 16)
     label.textColor = .black
