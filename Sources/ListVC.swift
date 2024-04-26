@@ -92,6 +92,7 @@ extension ListVC: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let firstUser = self.data[indexPath.row]
         self.selectedUser = firstUser
+        self.selectedInex = indexPath.row
         self.tableView.reloadData()
     }
     
