@@ -26,10 +26,6 @@
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7qI-b8-xUj">
                             <rect key="frame" x="0.0" y="0.0" width="393" height="689"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <connections>
-                                <outlet property="dataSource" destination="-1" id="QEU-YJ-LPR"/>
-                                <outlet property="delegate" destination="-1" id="NHe-X3-0pX"/>
-                            </connections>
                         </tableView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HcS-9Q-yid">
                             <rect key="frame" x="0.0" y="689" width="393" height="70"/>
