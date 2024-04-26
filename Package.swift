@@ -5,12 +5,31 @@ import PackageDescription
 
 let package = Package(
     name: "MyListViewPackage",
+    products: [
+        // Products define the executables and libraries a package produces, making them visible to other packages.
+        .library(
+            name: "MyListViewPackage",
+            targets: ["MyListViewPackage"]),
+    ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.9.1"))
     ],
     targets: [
         .target(
             name: "MyListViewPackage",
-            dependencies: ["Alamofire"]),
+            dependencies: ["Alamofire"])
     ]
 )
+
+//
+//let package = Package(
+//    name: "MyListViewPackage",
+//    dependencies: [
+//        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.9.1"))
+//    ],
+//    targets: [
+//        .target(
+//            name: "MyListViewPackage",
+//            dependencies: ["Alamofire"]),
+//    ]
+//)
