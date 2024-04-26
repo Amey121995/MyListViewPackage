@@ -8,8 +8,8 @@
 import UIKit
 
 class UserCell: UITableViewCell {
-    @IBOutlet private var viewUserCard: UIView!
-    @IBOutlet private var lblUserNames: UILabel!
+    @IBOutlet weak var viewUserCard: UIView!
+    @IBOutlet weak var lblUserNames: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,12 +21,5 @@ class UserCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    func configure(with name: String, color: UIColor)
-    {
-        self.viewUserCard.backgroundColor = color
-        self.lblUserNames.textColor = .black
-        self.lblUserNames.text = name
-    }
-    
+ 
 }
