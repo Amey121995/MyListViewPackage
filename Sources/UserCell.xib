@@ -52,7 +52,6 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="lblUserName" destination="5Wf-Zm-2fX" id="Of3-hw-pKo"/>
                 <outlet property="lblUserNames" destination="5Wf-Zm-2fX" id="9fd-2v-Rs8"/>
                 <outlet property="viewUserCard" destination="y5c-K1-DP4" id="GAC-6l-BBE"/>
             </connections>
