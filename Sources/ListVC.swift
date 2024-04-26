@@ -32,6 +32,7 @@ class ListVC: UIViewController {
     
     private func setupTableView() {
         self.tableView.register(UINib(nibName: "UserCell", bundle: Bundle.module), forCellReuseIdentifier: "UserCell")
+        self.tableView.register(UINib(nibName: "ListVC", bundle: Bundle.module), forCellReuseIdentifier: "Cell")
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.data.removeAll()
@@ -77,18 +78,20 @@ extension ListVC: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let data = self.data[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as! UserCell
-        cell.selectionStyle = .none
-        cell.lblUserNames.text = "\(data.firstName ?? "") \(data.lastName ?? "")"
-        if data.id == self.selectedUser?.id{
-            cell.viewUserCard.backgroundColor = .blue.withAlphaComponent(0.1)
-            cell.lblUserNames.textColor = .white
-        }
-        else
-        {
-            cell.viewUserCard.backgroundColor = .white
-            cell.lblUserNames.textColor = .black
-        }
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as! UserCell
+//        cell.selectionStyle = .none
+//        cell.lblUserNames.text = "\(data.firstName ?? "") \(data.lastName ?? "")"
+//        if data.id == self.selectedUser?.id{
+//            cell.viewUserCard.backgroundColor = .blue.withAlphaComponent(0.1)
+//            cell.lblUserNames.textColor = .white
+//        }
+//        else
+//        {
+//            cell.viewUserCard.backgroundColor = .white
+//            cell.lblUserNames.textColor = .black
+//        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = "\(data.firstName ?? "") \(data.lastName ?? "")"
         return cell
     }
     
