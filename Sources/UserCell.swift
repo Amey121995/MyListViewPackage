@@ -8,8 +8,8 @@
 import UIKit
 
 class UserCell: UITableViewCell {
-    @IBOutlet var viewUserCard: UIView!
-    @IBOutlet var lblUserNames: UILabel!
+    @IBOutlet weak var viewUserCard: UIView!
+    @IBOutlet weak var lblUserNames: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

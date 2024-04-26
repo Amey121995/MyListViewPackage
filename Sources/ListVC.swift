@@ -7,7 +7,7 @@
 
 import UIKit
 class ListVC: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private var tableView: UITableView!
     var data: [User] = []
     private let completion: (_ name: String?,_ dict: [String:Any]?) -> Void
     var count = 1

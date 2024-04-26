@@ -52,8 +52,8 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="lblUserNames" destination="5Wf-Zm-2fX" id="9fd-2v-Rs8"/>
-                <outlet property="viewUserCard" destination="y5c-K1-DP4" id="GAC-6l-BBE"/>
+                <outlet property="lblUserNames" destination="5Wf-Zm-2fX" id="ofa-Wp-oR0"/>
+                <outlet property="viewUserCard" destination="y5c-K1-DP4" id="gVg-9B-UH4"/>
             </connections>
             <point key="canvasLocation" x="252.67175572519082" y="48.943661971830991"/>
         </tableViewCell>

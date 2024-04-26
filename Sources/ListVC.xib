@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -10,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListVC" customModule="ApiManger" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="7qI-b8-xUj" id="VxN-fY-u7F"/>
+                <outlet property="tableView" destination="7qI-b8-xUj" id="Svo-se-dF5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,8 +27,8 @@
                             <rect key="frame" x="0.0" y="0.0" width="393" height="689"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <connections>
-                                <outlet property="dataSource" destination="-1" id="P5M-LV-UJn"/>
-                                <outlet property="delegate" destination="-1" id="OFf-in-B5d"/>
+                                <outlet property="dataSource" destination="-1" id="QEU-YJ-LPR"/>
+                                <outlet property="delegate" destination="-1" id="NHe-X3-0pX"/>
                             </connections>
                         </tableView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HcS-9Q-yid">
