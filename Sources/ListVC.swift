@@ -30,16 +30,6 @@ class ListVC: UIViewController {
         
     }
     
-    func createCustomCell() -> UserCell? {
-      let nib = UserCell.loadFromNib()
-      guard let cell = nib.instantiate(withOwner: nil, options: nil).first as? UserCell else {
-        return nil
-      }
-      // Configure the cell further if needed
-      cell.lblUserNames.text = "Sample Text"
-      return cell
-    }
-    
     private func setupTableView() {
         self.tableView.register(UINib(nibName: "UserCell", bundle: Bundle.module), forCellReuseIdentifier: "UserCell")
         self.tableView.dataSource = self
@@ -87,25 +77,19 @@ extension ListVC: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let data = self.data[indexPath.row]
-        let cell = self.createCustomCell()
-        if cell == nil{
-            return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as! UserCell
+        cell.selectionStyle = .none
+        cell.lblUserNames.text = "\(data.firstName ?? "") \(data.lastName ?? "")"
+        if data.id == self.selectedUser?.id{
+            cell.viewUserCard.backgroundColor = .blue.withAlphaComponent(0.1)
+            cell.lblUserNames.textColor = .white
         }
-        else{
-            cell?.selectionStyle = .none
-            cell?.lblUserNames.text = "\(data.firstName ?? "") \(data.lastName ?? "")"
-            if data.id == self.selectedUser?.id{
-                cell?.viewUserCard.backgroundColor = .blue.withAlphaComponent(0.1)
-                cell?.lblUserNames.textColor = .white
-            }
-            else
-            {
-                cell?.viewUserCard.backgroundColor = .white
-                cell?.lblUserNames.textColor = .black
-            }
-            return cell!
+        else
+        {
+            cell.viewUserCard.backgroundColor = .white
+            cell.lblUserNames.textColor = .black
         }
-        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

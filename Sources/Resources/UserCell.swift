@@ -21,11 +21,5 @@ class UserCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    static func loadFromNib() -> UINib {
-        let bundle = Bundle(for: UserCell.self) // Access bundle for the class
-        let nib = UINib(nibName: "UserCell", bundle: bundle) // Specify XIB name
-        return nib
-      }
  
 }
