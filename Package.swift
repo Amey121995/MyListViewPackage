@@ -17,7 +17,7 @@ let package = Package(
     targets: [
         .target(
             name: "MyListViewPackage",
-            dependencies: ["Alamofire"])
+            dependencies: ["Alamofire"], exclude: ["APIManager","APIManagerService"])
     ]
 )
 
