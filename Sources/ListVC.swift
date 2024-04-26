@@ -79,15 +79,15 @@ extension ListVC: UITableViewDataSource, UITableViewDelegate{
         let data = self.data[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as! UserCell
         cell.selectionStyle = .none
-        cell.lblUserName.text = "\(data.firstName ?? "") \(data.lastName ?? "")"
+        cell.lblUserNames.text = "\(data.firstName ?? "") \(data.lastName ?? "")"
         if data.id == self.selectedUser?.id{
             cell.viewUserCard.backgroundColor = .blue.withAlphaComponent(0.1)
-            cell.lblUserName.textColor = .white
+            cell.lblUserNames.textColor = .white
         }
         else
         {
             cell.viewUserCard.backgroundColor = .white
-            cell.lblUserName.textColor = .black
+            cell.lblUserNames.textColor = .black
         }
         return cell
     }

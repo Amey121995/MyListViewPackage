@@ -9,7 +9,7 @@ import UIKit
 
 class UserCell: UITableViewCell {
     @IBOutlet var viewUserCard: UIView!
-    @IBOutlet var lblUserName: UILabel!
+    @IBOutlet var lblUserNames: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
