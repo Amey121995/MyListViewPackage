@@ -15,7 +15,7 @@ class ListVC: UIViewController {
     
     init(completion: @escaping (_ name: String?,_ dict: [String:Any]?) -> Void) {
         self.completion = completion
-        super.init(nibName: "ListVC", bundle: Bundle(for: ListVC.self))
+        super.init(nibName: "ListVC", bundle: Bundle.module)
     }
 
     
@@ -32,7 +32,7 @@ class ListVC: UIViewController {
     private func setupTableView() {
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        self.tableView.register(UINib(nibName: "UserCell", bundle: Bundle(for: UserCell.self)), forCellReuseIdentifier: "UserCell")
+        self.tableView.register(UINib(nibName: "UserCell", bundle: Bundle.module), forCellReuseIdentifier: "UserCell")
         self.data.removeAll()
 
         
