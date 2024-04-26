@@ -31,9 +31,9 @@ class ListVC: UIViewController {
     }
     
     private func setupTableView() {
+        self.tableView.register(UINib(nibName: "UserCell", bundle: Bundle.module), forCellReuseIdentifier: "UserCell")
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        self.tableView.register(UINib(nibName: "UserCell", bundle: Bundle.module), forCellReuseIdentifier: "UserCell")
         self.data.removeAll()
 
         
