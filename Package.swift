@@ -11,25 +11,10 @@ let package = Package(
             name: "MyListViewPackage",
             targets: ["MyListViewPackage"]),
     ],
-    dependencies: [
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.9.1"))
-    ],
     targets: [
-        .target(
-            name: "MyListViewPackage",
-            dependencies: ["Alamofire"])
+        // Targets are the basic building blocks of a package, defining a module or a test suite.
+        // Targets can depend on other targets in this package and products from dependencies.
+        .binaryTarget(name: "MyListViewPackage", path: "./Sources/Demoframework.xcframework"),
     ]
 )
 
-//
-//let package = Package(
-//    name: "MyListViewPackage",
-//    dependencies: [
-//        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.9.1"))
-//    ],
-//    targets: [
-//        .target(
-//            name: "MyListViewPackage",
-//            dependencies: ["Alamofire"]),
-//    ]
-//)

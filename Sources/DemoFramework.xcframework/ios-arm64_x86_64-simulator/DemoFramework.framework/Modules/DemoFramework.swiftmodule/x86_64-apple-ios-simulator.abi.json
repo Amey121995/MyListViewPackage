@@ -1,0 +1,614 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DemoFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DemoFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DemoFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DemoFramework",
+        "printedName": "DemoFramework",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "showListView",
+            "printedName": "showListView(from:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, [Swift.String : Any]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, [Swift.String : Any]?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[Swift.String : Any]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13DemoFrameworkAAC12showListView4from10completionySo16UIViewControllerC_ySSSg_SDySSypGSgtctFZ",
+            "mangledName": "$s13DemoFrameworkAAC12showListView4from10completionySo16UIViewControllerC_ySSSg_SDySSypGSgtctFZ",
+            "moduleName": "DemoFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13DemoFrameworkAAC",
+        "mangledName": "$s13DemoFrameworkAAC",
+        "moduleName": "DemoFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DemoFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserModel",
+        "printedName": "UserModel",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserModel",
+                "printedName": "DemoFramework.UserModel",
+                "usr": "s:13DemoFramework9UserModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13DemoFramework9UserModelV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13DemoFramework9UserModelV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "DemoFramework",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13DemoFramework9UserModelV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13DemoFramework9UserModelV6encode2toys7Encoder_p_tKF",
+            "moduleName": "DemoFramework",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13DemoFramework9UserModelV",
+        "mangledName": "$s13DemoFramework9UserModelV",
+        "moduleName": "DemoFramework",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "User",
+        "printedName": "User",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "User",
+                "printedName": "DemoFramework.User",
+                "usr": "s:13DemoFramework4UserV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13DemoFramework4UserV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13DemoFramework4UserV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "DemoFramework",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13DemoFramework4UserV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13DemoFramework4UserV6encode2toys7Encoder_p_tKF",
+            "moduleName": "DemoFramework",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13DemoFramework4UserV",
+        "mangledName": "$s13DemoFramework4UserV",
+        "moduleName": "DemoFramework",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Support",
+        "printedName": "Support",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Support",
+                "printedName": "DemoFramework.Support",
+                "usr": "s:13DemoFramework7SupportV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13DemoFramework7SupportV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13DemoFramework7SupportV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "DemoFramework",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13DemoFramework7SupportV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13DemoFramework7SupportV6encode2toys7Encoder_p_tKF",
+            "moduleName": "DemoFramework",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13DemoFramework7SupportV",
+        "mangledName": "$s13DemoFramework7SupportV",
+        "moduleName": "DemoFramework",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DemoFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "DemoFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "APIManagerService",
+        "printedName": "APIManagerService",
+        "declKind": "Class",
+        "usr": "s:13DemoFramework17APIManagerServiceC",
+        "mangledName": "$s13DemoFramework17APIManagerServiceC",
+        "moduleName": "DemoFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DemoFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/ListVC\/ListVC.swift",
+      "kind": "Array",
+      "offset": 197,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/ListVC\/ListVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 292,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/ListVC\/ListVC.swift",
+      "kind": "StringLiteral",
+      "offset": 100,
+      "length": 6,
+      "value": "\"DemoFramework.ListVC\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 321,
+      "length": 6,
+      "value": "\"page\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 351,
+      "length": 10,
+      "value": "\"per_page\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 383,
+      "length": 7,
+      "value": "\"total\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 417,
+      "length": 13,
+      "value": "\"total_pages\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 455,
+      "length": 6,
+      "value": "\"data\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 485,
+      "length": 9,
+      "value": "\"support\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 321,
+      "length": 6,
+      "value": "\"page\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 351,
+      "length": 10,
+      "value": "\"per_page\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 383,
+      "length": 7,
+      "value": "\"total\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 417,
+      "length": 13,
+      "value": "\"total_pages\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 455,
+      "length": 6,
+      "value": "\"data\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 485,
+      "length": 9,
+      "value": "\"support\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 695,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 721,
+      "length": 7,
+      "value": "\"email\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 754,
+      "length": 12,
+      "value": "\"first_name\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 791,
+      "length": 11,
+      "value": "\"last_name\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 825,
+      "length": 8,
+      "value": "\"avatar\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 695,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 721,
+      "length": 7,
+      "value": "\"email\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 754,
+      "length": 12,
+      "value": "\"first_name\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 791,
+      "length": 11,
+      "value": "\"last_name\""
+    },
+    {
+      "filePath": "\/Users\/ameydalvi\/Documents\/IOS\/Test\/DemoFramework\/DemoFramework\/UserModel.swift",
+      "kind": "StringLiteral",
+      "offset": 825,
+      "length": 8,
+      "value": "\"avatar\""
+    }
+  ]
+}
